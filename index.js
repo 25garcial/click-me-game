@@ -1,10 +1,5 @@
-for (var i = 0; i < 10; i++) {
-  var spot = document.createElement("div")
-  spot.classList.add("columns")
-  document.body.appendChild(spot)
-}
-for (var i = 0; i < 10; i++) {
-  for (var o = 0; o < 10; o++) {
+
+for (var i = 0; i < 100; i++) {
     let spot = document.createElement("div")
     spot.classList.add("spot")
     spot.addEventListener("click", function() {
@@ -17,7 +12,7 @@ for (var i = 0; i < 10; i++) {
         console.log(random)
       }
     })
-    document.querySelectorAll(".columns")[i].appendChild(spot)
-  }
+    document.querySelector(".container").appendChild(spot)
+  
 }
 document.querySelectorAll(".spot")[Math.floor(Math.random()) * 100].textContent = "click me"
