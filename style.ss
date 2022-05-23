@@ -2,12 +2,9 @@
   background-color: pink;
   border: 3px solid;
   height: 20px;
-  width: 55px;
-  
+  width: 50x;
 }
-
-.columns {
-  background: red;
-  border: solid green 1px;
-  display: inline-block;  
+.container{
+  display: grid;
+  grid-template-columns: repeat(10, 50px);
 }
