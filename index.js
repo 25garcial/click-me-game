@@ -7,10 +7,12 @@ for (var i = 0; i < 100; i++) {
     console.log("triggered")
     if (this.textContent == "click me") {
       this.textContent = "";
+      this.style.backgroundColor="pink"
       console.log("succeded")
       score++
       document.querySelector(".score").textContent = score
       let random = Math.floor(Math.random() * 100)
+       document.querySelectorAll(".spot")[random].style.backgroundColor="cyan"
       document.querySelectorAll(".spot")[random].textContent = "click me"
       console.log(random)
     }
