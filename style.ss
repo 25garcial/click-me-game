@@ -2,9 +2,11 @@
   background-color: pink;
   border: 3px solid;
   height: 20px;
-  width: 50x;
 }
-.container{
+
+.container {
+  justify-content: center;
   display: grid;
-  grid-template-columns: repeat(10, 50px);
+  gap: 10px;
+  grid-template-columns: repeat(10, 65px);
 }
