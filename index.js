@@ -20,4 +20,7 @@ for (var i = 0; i < 100; i++) {
   document.querySelector(".container").appendChild(spot)
 
 }
-document.querySelectorAll(".spot")[Math.floor(Math.random()) * 100].textContent = "click me"
+let random = Math.floor(Math.random() * 100)
+document.querySelectorAll(".spot")[random].textContent = "click me"
+
+document.querySelectorAll(".spot")[random].style.backgroundColor="cyan"
